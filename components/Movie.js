@@ -48,8 +48,7 @@ function Movie(props) {
   return (
     <div className={styles.card}>
       <img className={styles.image} src={`https://image.tmdb.org/t/p/original/${props.poster}`} alt={props.title} />
-      <div className={styles.textContainer}>
-        <div>
+        <div className={styles.textContainer}>
           <span className={styles.name}>{props.title}</span>
           <p className={styles.description}>{props.overview}</p>
         </div>
@@ -60,7 +59,6 @@ function Movie(props) {
           <span><FontAwesomeIcon icon={faHeart} onClick={() => handleLikeMovie()} style={heartIconStyle} className="like" /></span>
         </div>
       </div>
-    </div>
   );
 }
 
